@@ -31,8 +31,6 @@ public class exo2 {
         if (nb < 1) return 0;
         else if (nb == 1) return 1;
         else if (nb > 10000) return Integer.MAX_VALUE;
-        else {
-        return nb * calculFacRec(nb - 1);
-        }
+        else return nb * calculFacRec(nb - 1);
     }
 }
