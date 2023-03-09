@@ -34,25 +34,15 @@ public class exo5 {
         for(int i= 1; i < nombreCoup + 1; i++){
                 System.out.println(listeCoup[i]);
         }
-        scanner.close();
-        int nombrePartie = 0;
-        nombrePartie++;
-        int [] Score = new int[nombrePartie];
-        Score[nombrePartie] = nombreCoup;
-        System.out.println("Liste des scores");
-        for(int j=0; j < nombrePartie + 1; j++){
-            System.out.println(Score[j]);
-        }
         System.out.println("Voulez vous rejouer ? (0/1)");
         Scanner scanner3 = new Scanner(System.in);
-        int choix = 0;
-        choix = scanner3.nextInt();
-        if (choix == 0){
+        int rejouer = scanner3.nextInt();
+        if(rejouer == 1){
             Jeu();
         }
-        else if (choix == 1){
+        else{
+            System.out.println("Au revoir");
             System.exit(1);
         }
-        scanner3.close();
 }
 }
