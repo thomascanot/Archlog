@@ -2,7 +2,9 @@ package TD3;
 
 public class exo1 {
     public interface Operation {
-        Integer addition (Integer a, Integer b);
+        public default Integer addition(Integer a, Integer b){
+            return a + b;
+        }
         Integer multiplication (Integer a, Integer b);
         Integer diviser (Integer a, Integer b);
         Integer factorielle(Integer n);
@@ -10,9 +12,9 @@ public class exo1 {
 
     public static class OperationImpl implements Operation {
 
-        public Integer addition(Integer a, Integer b){
+        /* public Integer addition(Integer a, Integer b){
             return a + b;
-        }
+        } */
 
         public Integer multiplication(Integer a, Integer b){
             Integer resultat = 0;
