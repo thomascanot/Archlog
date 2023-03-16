@@ -18,7 +18,7 @@ public class exo4 {
         }
         return tab;
     }
-
+    
     public static int max(int[] tab, int i){
         int max = tab[i];
         int iMax = i;
