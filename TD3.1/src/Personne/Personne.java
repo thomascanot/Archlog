@@ -1,7 +1,8 @@
 package Personne;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Personne {
+public class Personne implements Serializable {
     private String _nom;
     private String _prenom;
     private LocalDate _date; 
